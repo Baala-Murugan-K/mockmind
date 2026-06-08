@@ -1,0 +1,16 @@
+.interview-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.interview-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+.interview-card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.interview-role { font-weight: 600; font-size: 16px; }
+.interview-date { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+.interview-card-bottom { display: flex; align-items: center; gap: 16px; }
+.interview-questions { font-size: 13px; color: var(--text-muted); }
+.interview-score { font-size: 13px; font-weight: 600; color: var(--primary); margin-left: auto; }
+.delete-btn { padding: 6px 10px; font-size: 13px; }

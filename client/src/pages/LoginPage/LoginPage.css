@@ -1,0 +1,39 @@
+.login-page {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: var(--bg); padding: 24px; position: relative; overflow: hidden;
+}
+.login-page::before {
+  content: ''; position: absolute; width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(124,111,255,0.12), transparent 70%);
+  top: -100px; left: -100px; pointer-events: none;
+}
+.login-page::after {
+  content: ''; position: absolute; width: 400px; height: 400px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(159,143,255,0.08), transparent 70%);
+  bottom: -80px; right: -80px; pointer-events: none;
+}
+.login-card {
+  width: 100%; max-width: 420px; text-align: center;
+  animation: fadeUp 0.5s ease;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow), var(--shadow-glow);
+}
+.login-logo {
+  font-size: 44px; margin-bottom: 4px;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.login-brand { font-family: var(--font-display); font-size: 28px; font-weight: 800; margin-bottom: 6px;
+  background: linear-gradient(135deg, var(--text), var(--primary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.login-subtitle { color: var(--text-muted); font-size: 14px; margin: 0 0 28px; }
+.login-form { display: flex; flex-direction: column; gap: 14px; text-align: left; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.login-btn { width: 100%; justify-content: center; padding: 13px; font-size: 15px; margin-top: 6px; font-family: var(--font-display); font-weight: 700; letter-spacing: 0.3px; }
+.login-toggle { margin-top: 20px; font-size: 14px; color: var(--text-muted); }
+.login-toggle button { background: none; border: none; color: var(--primary); cursor: pointer; font-size: 14px; font-weight: 600; }
+.login-toggle button:hover { text-decoration: underline; }
+.login-divider { display: flex; align-items: center; gap: 12px; margin: 4px 0; }
+.login-divider::before, .login-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.login-divider span { font-size: 12px; color: var(--text-dim); }

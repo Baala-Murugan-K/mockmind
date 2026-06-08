@@ -1,0 +1,16 @@
+.voice-recorder { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.record-btn { padding: 14px 32px; font-size: 16px; }
+.recording-active { display: flex; align-items: center; gap: 16px; }
+.recording-indicator { display: flex; align-items: center; gap: 8px; color: var(--danger); font-weight: 600; }
+.rec-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--danger); animation: pulse 1s infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+.recording-preview { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; }
+.recording-preview audio { width: 100%; max-width: 400px; }
+.preview-actions { display: flex; gap: 12px; }
+.transcript-preview {
+  background: var(--bg3); border-radius: 8px;
+  padding: 12px 16px; font-size: 14px;
+  color: var(--text-muted); width: 100%; margin-top: 8px;
+}
+.preview-hint { font-size: 13px; color: var(--text-muted); text-align: center; margin: 8px 0; }
+.recording-preview textarea { margin: 8px 0; min-height: 100px; }

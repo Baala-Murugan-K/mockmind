@@ -12,8 +12,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://mockmind.vercel.app',
-    'https://mockmind-*.vercel.app',
+    'https://mock-mind-ten.vercel.app/',
   ],
   credentials: true,
 }));

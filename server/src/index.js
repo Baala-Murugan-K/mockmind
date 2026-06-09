@@ -9,7 +9,14 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://mockmind.vercel.app',
+    'https://mockmind-*.vercel.app',
+  ],
+  credentials: true,
+}));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 

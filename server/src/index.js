@@ -13,7 +13,7 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'https://mock-mind-git-main-baala-murugan-ks-projects.vercel.app',
-    'https://mock-mind-ten.vercel.app/',
+    'https://mock-mind-ten.vercel.app',
     'https://mock-mind.vercel.app',
   ],
   credentials: true,

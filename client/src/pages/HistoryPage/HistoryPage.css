@@ -26,7 +26,8 @@
 .history-title {
   font-family: var(--font-display); font-size: 38px; font-weight: 800;
   background: linear-gradient(135deg, var(--text) 40%, var(--primary));
-  background-clip: text; -webkit-background-clip: text;
+  background-clip: text; /* standard */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 8px; line-height: 1.1;
 }
@@ -90,3 +91,23 @@
 .page-btn:disabled { opacity: 0.3; cursor: not-allowed; }
 .page-numbers { display: flex; gap: 6px; }
 .page-dot { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); }
+
+/* ===== HISTORY PAGE MOBILE ===== */
+@media (max-width: 768px) {
+  .history-hero { padding: 28px 0 24px; }
+  .history-hero-content { flex-direction: column; gap: 20px; }
+  .history-title { font-size: 28px; }
+  .history-hero-stats { width: 100%; justify-content: center; padding: 16px 20px; }
+  .h-stat-val { font-size: 22px; }
+
+  .history-toolbar { flex-direction: column; align-items: stretch; gap: 12px; }
+  .filter-tabs { width: 100%; justify-content: stretch; }
+  .filter-tab { flex: 1; justify-content: center; padding: 8px 10px; font-size: 12px; }
+  .history-actions { display: flex; gap: 8px; }
+  .history-actions .btn { flex: 1; justify-content: center; }
+
+  .history-grid { grid-template-columns: 1fr; }
+
+  .pagination { flex-wrap: wrap; gap: 6px; }
+  .page-numbers { flex-wrap: wrap; justify-content: center; }
+}

@@ -378,3 +378,75 @@
   color: var(--exp-color); background: color-mix(in srgb, var(--exp-color) 12%, transparent);
   border: 1px solid var(--exp-color); padding: 4px 14px; border-radius: 20px;
 }
+
+/* ===== SETUP PAGE MOBILE ===== */
+@media (max-width: 768px) {
+  .setup-page { padding: 20px 12px; }
+  .setup-container { gap: 20px; }
+  .setup-title { font-size: 24px; }
+  .setup-subtitle { font-size: 13px; }
+
+  /* Step indicators — scroll horizontally on small screens */
+  .setup-steps {
+    overflow-x: auto; padding-bottom: 8px;
+    justify-content: flex-start; gap: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .setup-steps::-webkit-scrollbar { display: none; }
+  .setup-step-item { flex-shrink: 0; font-size: 12px; }
+  .step-connector { width: 32px; margin: 0 6px; }
+  .step-num { width: 26px; height: 26px; font-size: 11px; }
+
+  .step-panel { padding: 18px 14px; border-radius: 14px; }
+
+  /* Roles grid — 3 columns on mobile */
+  .roles-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .role-card { padding: 12px 6px; border-radius: 10px; }
+  .role-icon { font-size: 18px; }
+  .role-label { font-size: 10px; }
+  .role-tag { font-size: 8px; padding: 1px 4px; }
+
+  /* Experience cards — full width stack */
+  .exp-grid { grid-template-columns: 1fr; gap: 12px; }
+  .exp-card { padding: 20px 16px; }
+  .exp-label { font-size: 20px; }
+  .exp-icon { font-size: 28px; }
+
+  /* Language grid — 4 columns */
+  .lang-grid { grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .lang-card { padding: 12px 6px; border-radius: 10px; }
+  .lang-icon { font-size: 18px; }
+  .lang-label { font-size: 10px; }
+
+  /* Difficulty — stack vertically */
+  .difficulty-grid { grid-template-columns: 1fr; gap: 10px; }
+  .diff-card { padding: 16px; flex-direction: row; align-items: center; gap: 16px; text-align: left; }
+  .diff-icon { font-size: 24px; flex-shrink: 0; }
+  .diff-label { font-size: 16px; }
+  .diff-recommended { top: 8px; right: 8px; font-size: 8px; }
+  .diff-selected-check { bottom: 8px; right: 8px; }
+
+  /* Upload zone */
+  .upload-zone { padding: 32px 16px; }
+  .upload-orbit { width: 60px; height: 60px; }
+  .upload-icon-center { font-size: 22px; }
+
+  /* Actions */
+  .step-actions { flex-direction: column-reverse; gap: 10px; }
+  .step-actions .btn { width: 100%; justify-content: center; }
+  .selected-preview { width: 100%; }
+  .launch-btn { padding: 14px; font-size: 15px; }
+
+  /* Summary bar */
+  .setup-summary-bar { gap: 6px; }
+  .summary-chip { font-size: 11px; padding: 4px 10px; }
+
+  /* Custom input */
+  .custom-input-wrapper input { font-size: 14px; }
+}
+
+@media (max-width: 380px) {
+  .roles-grid { grid-template-columns: repeat(3, 1fr); }
+  .lang-grid { grid-template-columns: repeat(4, 1fr); }
+}

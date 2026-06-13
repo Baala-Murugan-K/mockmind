@@ -201,3 +201,48 @@
 }
 .farewell-panel h2 { font-family: var(--font-display); font-size: 26px; font-weight: 800; }
 .farewell-panel p { color: var(--text-muted); font-size: 14px; }
+
+/* ===== INTERVIEW PAGE MOBILE ===== */
+@media (max-width: 768px) {
+  .interview-page { height: auto; min-height: calc(100vh - 56px); overflow: auto; }
+
+  .interview-layout {
+    grid-template-columns: 1fr;
+    height: auto; overflow: visible;
+  }
+
+  .interviewer-panel {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .interviewer-avatar-section { flex-direction: row; align-items: center; gap: 14px; }
+  .avatar-rings { width: 56px; height: 56px; flex-shrink: 0; }
+  .avatar-core { font-size: 16px; }
+  .avatar-name { font-size: 14px; }
+  .avatar-role { font-size: 10px; }
+
+  .state-badge { font-size: 11px; padding: 6px 12px; margin-bottom: 10px; }
+  .interviewer-message { font-size: 13px; padding: 12px; margin-bottom: 10px; }
+
+  .current-question-card { padding: 12px; margin-bottom: 10px; }
+  .question-text { font-size: 13px; }
+
+  .end-btn { font-size: 11px; padding: 6px 12px; }
+
+  .answer-panel { padding: 16px; gap: 12px; }
+
+  .answer-tabs { width: 100%; justify-content: stretch; }
+  .tab-btn { flex: 1; justify-content: center; padding: 8px 12px; font-size: 12px; }
+
+  .text-answer textarea { min-height: 150px; font-size: 14px; }
+  .text-actions { flex-direction: column; align-items: stretch; gap: 8px; }
+  .char-count { font-size: 11px; text-align: center; }
+  .submit-btn { width: 100%; justify-content: center; }
+
+  .thinking-panel, .farewell-panel { padding: 40px 20px; }
+  .farewell-emoji { font-size: 48px; }
+  .farewell-panel h2 { font-size: 22px; }
+}

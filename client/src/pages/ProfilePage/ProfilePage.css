@@ -90,3 +90,12 @@
   .profile-grid { grid-template-columns: 1fr; }
   .profile-header { flex-direction: column; text-align: center; }
 }
+
+/* ===== PROFILE PAGE MOBILE ===== */
+@media (max-width: 768px) {
+  .profile-header { flex-direction: column; align-items: center; text-align: center; gap: 16px; margin-bottom: 24px; }
+  .avatar-ring { width: 70px; height: 70px; }
+  .profile-info h1 { font-size: 22px; }
+  .profile-grid { grid-template-columns: 1fr; }
+  .theme-options { grid-template-columns: 1fr 1fr; }
+}

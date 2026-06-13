@@ -14,3 +14,11 @@
 .interview-questions { font-size: 13px; color: var(--text-muted); }
 .interview-score { font-size: 13px; font-weight: 600; color: var(--primary); margin-left: auto; }
 .delete-btn { padding: 6px 10px; font-size: 13px; }
+
+/* ===== INTERVIEW CARD MOBILE ===== */
+@media (max-width: 768px) {
+  .interview-card { padding: 16px; }
+  .interview-role { font-size: 15px; }
+  .interview-card-bottom { flex-wrap: wrap; gap: 8px; }
+  .interview-score { margin-left: 0; }
+}
